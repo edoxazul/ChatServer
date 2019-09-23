@@ -1,5 +1,7 @@
 #Cosas que no se suben a git
 
 #intellij IDEA
+
 src/main/resources/
 src/test/
+/.gradle/
