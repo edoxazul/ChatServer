@@ -1,6 +1,6 @@
 #Cosas que no se suben a git
 
-
-/gradle/
+#intellij IDEA
+.gradle
 src/main/resources/
 src/test/
