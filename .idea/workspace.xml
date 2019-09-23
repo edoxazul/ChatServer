@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aed9ef5e-2271-46d0-a1ae-22630bfaa4c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/Eduardo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cl/ucn/disc/dsm/chat/ChatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cl/ucn/disc/dsm/chat/ChatMessage.java" afterDir="false" />
@@ -108,7 +112,7 @@
       <workItem from="1569187974513" duration="183000" />
       <workItem from="1569188186013" duration="585000" />
       <workItem from="1569194080846" duration="36000" />
-      <workItem from="1569245291641" duration="3328000" />
+      <workItem from="1569245291641" duration="7692000" />
     </task>
     <task id="LOCAL-00001" summary="Update files not final.">
       <created>1569188739718</created>
@@ -173,7 +177,21 @@
       <option name="project" value="LOCAL" />
       <updated>1569248121360</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added Copyright">
+      <created>1569248671621</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1569248671621</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Modifying Imports">
+      <created>1569248748679</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1569248748679</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +212,8 @@
     <MESSAGE value="Update files not final." />
     <MESSAGE value="Change the name project in settings.gradle" />
     <MESSAGE value="Modifying the execution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifying the execution" />
+    <MESSAGE value="Added Copyright" />
+    <MESSAGE value="Modifying Imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifying Imports" />
   </component>
 </project>

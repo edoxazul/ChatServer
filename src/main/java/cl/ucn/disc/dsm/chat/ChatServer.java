@@ -1,21 +1,10 @@
 /*
  * Copyright 2019 Eduardo Alvarez S
  *
- * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
- * documentation files (the "Software"), to deal in the Software without restriction, including without limitation
- * the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
- * and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ * For more information See LICENCE.
+ * In the root directory
  *
- * The above copyright notice and this permission notice shall be included in all copies or
- * substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
- * TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
- * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-
 
 
 package cl.ucn.disc.dsm.chat;
@@ -24,25 +13,27 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintWriter;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
+
 
 public class ChatServer {
-    /**
-     * The Logger
-     */
+
+    /** The Logger*/
     private static final Logger LOG = LoggerFactory.getLogger(ChatServer.class);
 
-    /**
-     * Representacion de la base de datos
-     */
-
-    private final List<ChatMessage> messages = new ArrayList<>();
+    /** DB Representation*/
+    private final List<ChatMessage> messages = new ArrayList<ChatMessage>();
 
     /**
-     * Puerto en que escuchara el server
+     * Server Port
      */
     private final int port;
 
@@ -72,11 +63,10 @@ public class ChatServer {
     }
 
     /**
-     * The Constructor.
-     *
+     * Constructor.
      * @param port to use as server.
      */
-    public ChatServer(final int port) {
+    public ChatServer(final int port) throws IOException {
 
         // Validacion del puerto
         if (port < 1024 || port > 65535) {
@@ -88,42 +78,111 @@ public class ChatServer {
 
 
     /**
-     * Inicio del server
+     * Server StartUp
      */
     public void start() throws IOException{
-        LOG.debug("Starting the server in port: {}", this.port);
+        LOG.debug("Starting the server in port: {}", port);
 
-        final ServerSocket serverSocket = new ServerSocket(this.port);
+        final ServerSocket serverSocket = new ServerSocket(port);
 
         // Ciclo para atender a los clientes
         while (true) {
-
-            // Cada peticion representa un socket.
-            final Socket socket = serverSocket.accept();
-
-            LOG.debug("Connection from: {}", socket);
+            try {
+                final Socket socket = serverSocket.accept();
+                final InetAddress address = socket.getInetAddress(); //Adress of the remote connection
+                LOG.debug("=======================");
+                LOG.debug("Connection from {} in port {}.", address.getHostAddress(), socket.getPort());
+                processConnection(socket);
+            } catch (IOException e) {
+                LOG.error("Connection error", e);
+                throw e;
+            }
 
         }
     }
 
+    /**
+     * Process the connection.
+     *
+     * @param socket to use as source of data.
+     */
+    private static void processConnection(final Socket socket) throws IOException {
+
+        // Reading the inputstream
+        final List<String> lines = readInputStreamByLines(socket);
+
+        final String request = lines.get(0);
+        LOG.debug("Request: {}", request);
+
+        final PrintWriter pw = new PrintWriter(socket.getOutputStream());
+
+
+
+
+        pw.println("HTTP/1.1 200 OK");
+        pw.println("Server: DSM v0.0.1");
+        pw.println("Date: " + new Date());
+        pw.println("Content-Type: text/html; charset=UTF-8");
+        //pw.println("Content-Type: text/plain; charset=UTF-8");
+        pw.println();
+        pw.println("<html><body>");
+        pw.println("<form method=\"post\" action=\"chateo\">");
+        pw.println("<br>");
+        pw.println("<textarea name=\"comentarios\" rows=\"10\" cols=\"40\"></textarea>");
+        pw.println("<br>");
+        pw.println("<input type=\"text\" size=\"15\" maxlength=\"30\" value=\"Username\" name=\"username\">");
+        pw.println("<input type=\"text\" size=\"15\" maxlength=\"30\" value=\"Message\" name=\"message\">");
+        pw.println("<button type=\"button\">Send </button>");
+        pw.println("</form>");
+
+
+//        pw.println("The Date: <strong>" + new Date());
+        pw.println("</body></html>");
+
+        pw.flush();
+
+        LOG.debug("Process ended.");
+
+    }
 
 
     /**
-     * The Main.
+     * Read all the input stream.
      *
-     * @param args
+     * @param socket to use to read.
+     * @return all the string readed.
      */
-    public static void main(final String args[]) throws IOException {
+    private static List<String> readInputStreamByLines(final Socket socket) throws IOException {
 
-        LOG.debug("Starting Main ..");
+        final InputStream is = socket.getInputStream();
 
-        // Build a chat server.
-        final ChatServer chatServer = new ChatServer(9000);
-        chatServer.start();
+        // The list of string readed from inputstream.
+        final List<String> lines = new ArrayList<>();
 
-        LOG.debug("The End.");
+        // The Scanner
+        final Scanner s = new Scanner(is).useDelimiter("\\A");
+        LOG.debug("Reading the Inputstream ..");
+
+        while (true) {
+
+            final String line = s.nextLine();
+            // log.debug("Line: [{}].", line);
+
+            if (line.length() == 0) {
+                break;
+            } else {
+                lines.add(line);
+            }
+        }
+        // String result = s.hasNext() ? s.next() : "";
+
+        // final List<String> lines = IOUtils.readLines(is, StandardCharsets.UTF_8);
+        return lines;
 
     }
+
+
+
 
 
 
