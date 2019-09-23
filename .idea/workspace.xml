@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aed9ef5e-2271-46d0-a1ae-22630bfaa4c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/Eduardo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cl/ucn/disc/dsm/chat/ChatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cl/ucn/disc/dsm/chat/ChatMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cl/ucn/disc/dsm/chat/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cl/ucn/disc/dsm/chat/ChatServer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,10 +45,11 @@
   </component>
   <component name="ProjectId" id="1Q6SyT1QKFtK2NMU4Jlj8EICBvD" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -102,7 +108,7 @@
       <workItem from="1569187974513" duration="183000" />
       <workItem from="1569188186013" duration="585000" />
       <workItem from="1569194080846" duration="36000" />
-      <workItem from="1569245291641" duration="2640000" />
+      <workItem from="1569245291641" duration="3328000" />
     </task>
     <task id="LOCAL-00001" summary="Update files not final.">
       <created>1569188739718</created>
@@ -160,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569247709328</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Modifying the execution">
+      <created>1569248121360</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1569248121360</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +193,7 @@
     <MESSAGE value="Primer Commit" />
     <MESSAGE value="Update files not final." />
     <MESSAGE value="Change the name project in settings.gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change the name project in settings.gradle" />
+    <MESSAGE value="Modifying the execution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifying the execution" />
   </component>
 </project>
