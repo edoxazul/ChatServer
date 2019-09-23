@@ -107,7 +107,7 @@
       <workItem from="1569187974513" duration="183000" />
       <workItem from="1569188186013" duration="585000" />
       <workItem from="1569194080846" duration="36000" />
-      <workItem from="1569245291641" duration="1525000" />
+      <workItem from="1569245291641" duration="2122000" />
     </task>
     <task id="LOCAL-00001" summary="Update files not final.">
       <created>1569188739718</created>
@@ -137,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1569246625077</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update files not final.">
+      <created>1569246862876</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569246862876</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update files not final.">
+      <created>1569246946559</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1569246946559</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
