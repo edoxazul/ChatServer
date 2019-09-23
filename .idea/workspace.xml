@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aed9ef5e-2271-46d0-a1ae-22630bfaa4c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +107,7 @@
       <workItem from="1569187974513" duration="183000" />
       <workItem from="1569188186013" duration="585000" />
       <workItem from="1569194080846" duration="36000" />
-      <workItem from="1569245291641" duration="2122000" />
+      <workItem from="1569245291641" duration="2317000" />
     </task>
     <task id="LOCAL-00001" summary="Update files not final.">
       <created>1569188739718</created>
@@ -151,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569246946559</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update files not final.">
+      <created>1569247441421</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1569247441421</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
