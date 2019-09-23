@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aed9ef5e-2271-46d0-a1ae-22630bfaa4c7" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="server" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Q6SyT1QKFtK2NMU4Jlj8EICBvD" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="server.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aed9ef5e-2271-46d0-a1ae-22630bfaa4c7" name="Default Changelist" comment="" />
+      <created>1567089806654</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567089806654</updated>
+      <workItem from="1567089811467" duration="976000" />
+      <workItem from="1567090827780" duration="339000" />
+      <workItem from="1567091193205" duration="1811000" />
+      <workItem from="1567099387979" duration="12000" />
+      <workItem from="1567103813606" duration="9000" />
+      <workItem from="1567478859011" duration="35000" />
+      <workItem from="1567478965519" duration="1332000" />
+      <workItem from="1567522569952" duration="1878000" />
+      <workItem from="1567524512838" duration="201000" />
+      <workItem from="1567540121271" duration="1317000" />
+      <workItem from="1567692236683" duration="3148000" />
+      <workItem from="1567695413247" duration="5332000" />
+      <workItem from="1567714351291" duration="214000" />
+      <workItem from="1568120654085" duration="742000" />
+      <workItem from="1568897861114" duration="60000" />
+      <workItem from="1568898292039" duration="70000" />
+      <workItem from="1568903947431" duration="474000" />
+      <workItem from="1569174672543" duration="63000" />
+      <workItem from="1569187974513" duration="183000" />
+      <workItem from="1569188186013" duration="585000" />
+      <workItem from="1569194080846" duration="36000" />
+      <workItem from="1569245291641" duration="1235000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update files not final.">
+      <created>1569188739718</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569188739718</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update files not final.">
+      <created>1569246163227</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569246163227</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update files not final.">
+      <created>1569246422245</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569246422245</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primer Commit" />
+    <MESSAGE value="Update files not final." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update files not final." />
+  </component>
+</project>
